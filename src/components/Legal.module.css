@@ -1,0 +1,28 @@
+.page {
+  padding: var(--spacing-2xl) var(--spacing-md);
+}
+
+.docsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.notice {
+  background: var(--purple-bg);
+  border: 2px dashed var(--purple-primary);
+  border-radius: var(--radius);
+  padding: var(--spacing-lg);
+}
+
+.noticeTitle {
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--purple-dark);
+}
+
+.noticeText {
+  color: var(--purple-dark);
+  line-height: 1.6;
+}

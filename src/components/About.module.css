@@ -1,0 +1,43 @@
+.page {
+  padding: var(--spacing-2xl) var(--spacing-md);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.sectionTitle {
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+}
+
+.mission {
+  line-height: 1.7;
+}
+
+.grid {
+  margin-bottom: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.listItem {
+  margin-bottom: var(--spacing-xxs);
+  color: var(--text-secondary);
+}
+
+.team {
+  text-align: center;
+}
+
+.team p {
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-secondary);
+}

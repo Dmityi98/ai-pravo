@@ -1,0 +1,76 @@
+.hero {
+  background: linear-gradient(135deg, var(--purple-primary), var(--purple-dark));
+  color: white;
+  padding: var(--spacing-3xl) 0;
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-lg);
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.heroActions {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.featuredGrid {
+  margin-top: var(--spacing-lg);
+}
+
+.categoriesGrid {
+  background: var(--bg-secondary);
+}
+
+.categoryCard {
+  text-align: center;
+  padding: var(--spacing-lg);
+}
+
+.categoryIcon {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.categoryTitle {
+  font-weight: 600;
+  margin-bottom: var(--spacing-xxs);
+  color: var(--text-primary);
+}
+
+.categoryDesc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.cta {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 1.75rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+  
+  .heroActions .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
