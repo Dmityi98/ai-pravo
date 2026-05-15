@@ -280,16 +280,16 @@ export const articles = [
   }
 ];
 
-// export const categories = [
-//   { id: 'all', name: 'Все статьи' },
-//   { id: 'аналитика', name: 'Аналитика' },
-//   { id: 'практика', name: 'Практика' },
-//   { id: 'новости', name: 'Новости' }
-// ];
+export const categories = [
+  { id: 'all', name: 'Все статьи' },
+  { id: 'аналитика', name: 'Аналитика' },
+  { id: 'практика', name: 'Практика' },
+  { id: 'новости', name: 'Новости' }
+];
 
-// export const subsections = [
-//   'Блокчейн и право',
-//   'ИИ и право',
-//   'Финтех и право',
-//   'LegalTech'
-// ];
+export const subsections = [
+  'Блокчейн и право',
+  'ИИ и право',
+  'Финтех и право',
+  'LegalTech'
+];
