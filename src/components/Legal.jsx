@@ -60,7 +60,7 @@ const legalDocs = [
       'Права пользователя: доступ, исправление, удаление',
       'Контакты для запросов: privacy@digital-law.ru'
     ],
-    link: 'src/docs/Politika_konfidentsialnosti_2.docx'
+    link: '/docs/Politika_konfidentsialnosti_2.docx'
   },
   {
     id: 'terms',
@@ -75,7 +75,7 @@ const legalDocs = [
       'Применимое право: законодательство РФ',
       'Порядок разрешения споров: претензионный, затем суд'
     ],
-    link: 'src/docs/polzovatelskoe_soglashenie.docx'
+    link: '/docs/polzovatelskoe_soglashenie.docx'
   }
 ];
 
@@ -91,7 +91,7 @@ export default function Legal() {
       <div className={styles.docsList}>
         {legalDocs.map(doc => (
           <LegalDocument key={doc.id} doc={doc} />
-          
+
         ))}
       </div>
       

@@ -109,7 +109,7 @@ export default function ContactForm() {
       
       <div className={styles.checkbox}>
         <label  className={styles.label}>
-          <input type="checkbox" name='' value={"no"} onChange={checkboxChange}/> Согласие на обработку <a className={styles.a} href="src/docs/PERSONAL_NYE_DANNYE.docx">персональных данных</a>
+          <input type="checkbox" name='' value={"no"} onChange={checkboxChange}/> Согласие на обработку <a className={styles.a} href="/docs/PERSONAL_NYE_DANNYE.docx">персональных данных</a>
         </label>
       </div>
       
