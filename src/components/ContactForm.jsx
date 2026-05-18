@@ -9,6 +9,7 @@ export default function ContactForm() {
     message: ''
   });
   const [status, setStatus] = useState('idle');
+  const [checkbox, setCheckbox] = useState(false);
 
   const handleChange = (e) => {
     setFormData(prev => ({
@@ -16,26 +17,37 @@ export default function ContactForm() {
       [e.target.name]: e.target.value
     }));
   };
+  
+  const checkboxChange = (e) => {
+    setCheckbox(e.target.checked);
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus('loading');
-    
-    try {
-      const response = await fetch('https://your-api.com/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
-      
-      if (!response.ok) throw new Error('Ошибка отправки');
-      
-      setStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (err) {
-      console.error('Form error:', err);
-      setStatus('error');
+
+
+
+    if(!checkbox)
+    {
+      alert("Вы не согласились с обработкой данных")
+      return;
     }
+      setStatus('loading');
+      try {
+        const response = await fetch('https://your-api.com/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+        
+        if (!response.ok) throw new Error('Ошибка отправки');
+        
+        setStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } catch (err) {
+        console.error('Form error:', err);
+        setStatus('error');
+      }
   };
 
   return (
@@ -93,6 +105,12 @@ export default function ContactForm() {
           onChange={handleChange}
           placeholder="Ваш вопрос или предложение..."
         />
+      </div>
+      
+      <div className={styles.checkbox}>
+        <label  className={styles.label}>
+          <input type="checkbox" name='' value={"no"} onChange={checkboxChange}/> Согласие на обработку <a className={styles.a} href="src/docs/PERSONAL_NYE_DANNYE.docx">персональных данных</a>
+        </label>
       </div>
       
       <button 

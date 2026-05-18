@@ -60,7 +60,7 @@ const legalDocs = [
       'Права пользователя: доступ, исправление, удаление',
       'Контакты для запросов: privacy@digital-law.ru'
     ],
-    link: '#'
+    link: 'src/docs/Politika_konfidentsialnosti_2.docx'
   },
   {
     id: 'terms',
@@ -75,7 +75,7 @@ const legalDocs = [
       'Применимое право: законодательство РФ',
       'Порядок разрешения споров: претензионный, затем суд'
     ],
-    link: '#'
+    link: 'src/docs/polzovatelskoe_soglashenie.docx'
   }
 ];
 

@@ -17,6 +17,18 @@
   font-size: 0.95rem;
 }
 
+
+.checkbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+.checkbox_label{
+  display: flex;
+  
+}
+
 .input,
 .textarea {
   width: 100%;
@@ -86,4 +98,12 @@
 .message.error {
   color: #b91c1c;
   background: #fef2f2;
+}
+
+.a{
+  color: blue;
+}
+
+.a:hover{
+  color: var(--purple-primary)
 }
