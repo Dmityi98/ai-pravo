@@ -91,6 +91,7 @@ export default function Legal() {
       <div className={styles.docsList}>
         {legalDocs.map(doc => (
           <LegalDocument key={doc.id} doc={doc} />
+          
         ))}
       </div>
       
