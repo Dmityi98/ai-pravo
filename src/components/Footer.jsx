@@ -26,8 +26,8 @@ export default function Footer() {
           <div className={styles.column}>
             <h5>Контакты</h5>
             <div className={styles.contactInfo}>
-              <span>📧 info@digital-law.ru</span>
-              <span>📍 Москва, Россия</span>
+              <span>📧 HarlyTanandnightbit@yandex.ru</span>
+              <span>📍 г. Нижний Новгород, ул. Ашхабадская, д. 4</span>
               <span>🕐 Пн-Пт: 10:00–19:00</span>
             </div>
           </div>

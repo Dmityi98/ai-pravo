@@ -18,24 +18,24 @@ export default function Contact() {
               <div className={styles.contactItem}>
                 <strong>Email</strong>
                 <a href="mailto:info@digital-law.ru" className={styles.contactLink}>
-                  info@digital-law.ru
+                  HarlyTanandnightbit@yandex.ru
                 </a>
               </div>
               <div className={styles.contactItem}>
                 <strong>Для прессы</strong>
                 <a href="mailto:press@digital-law.ru" className={styles.contactLink}>
-                  press@digital-law.ru
+                  HarlyTanandnightbit@yandex.ru
                 </a>
               </div>
               <div className={styles.contactItem}>
                 <strong>Техподдержка</strong>
                 <a href="mailto:support@digital-law.ru" className={styles.contactLink}>
-                  support@digital-law.ru
+                  HarlyTanandnightbit@yandex.ru
                 </a>
               </div>
               <div className={styles.contactItem}>
                 <strong>Адрес</strong>
-                <span>г. Москва, ул. Цифровая, д. 42</span>
+                <span>г. Нижний Новгород, ул. Ашхабадская, д. 4</span>
               </div>
             </div>
           </div>
